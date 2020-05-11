@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default class Navbar extends Component {
@@ -19,6 +20,10 @@ export default class Navbar extends Component {
         <h1>
           <i className={icon}></i> {title}
         </h1>
+        <div>
+          <Link to='/'>Home</Link>
+          <Link to='!#'>About</Link>
+        </div>
       </nav>
     );
   }

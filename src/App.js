@@ -1,15 +1,18 @@
 import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import Users from './Components/Users';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <Fragment>
-        <Navbar />
-      </Fragment>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <Users />
+        </Fragment>
+      </Router>
     );
   }
 }
-
-export default App;
